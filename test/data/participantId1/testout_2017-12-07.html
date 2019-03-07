@@ -1,0 +1,42 @@
+
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyArLRvWuf-D_xRBhSk3VtnerwABnvfJjLc"></script>
+            <div id="map-canvas" style="height: 100%; width: 100%"></div>
+            <script type="text/javascript">
+                var map;
+                function show_map() {
+                    map = new google.maps.Map(document.getElementById("map-canvas"), {
+                        zoom: 6,
+                        center: new google.maps.LatLng(29.689768926098516, -82.3378896844332)
+                    });
+                    new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6895334486423, -82.3380463024278),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6897693103252, -82.3379077299225),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6898371637285, -82.3372380277038),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6904090118065, -82.3380985714104),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6896335139341, -82.3379321262655),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6895579269989, -82.3380744174981),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6896421072541, -82.3379306158042),
+                    map: map
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', show_map);
+            </script>
+        

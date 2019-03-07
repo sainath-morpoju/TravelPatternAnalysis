@@ -1,0 +1,38 @@
+
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyArLRvWuf-D_xRBhSk3VtnerwABnvfJjLc"></script>
+            <div id="map-canvas" style="height: 100%; width: 100%"></div>
+            <script type="text/javascript">
+                var map;
+                function show_map() {
+                    map = new google.maps.Map(document.getElementById("map-canvas"), {
+                        zoom: 6,
+                        center: new google.maps.LatLng(29.620134187862295, -82.37602243199946)
+                    });
+                    new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6200806973502, -82.3758670594543),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6200806973502, -82.3758670594544),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6200110856444, -82.3759522195906),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6200110856444, -82.3759522195905),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6203107805923, -82.3762480169535),
+                    map: map
+                    });
+new google.maps.Marker({
+                    position: new google.maps.LatLng(29.6203107805923, -82.3762480169535),
+                    map: map
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', show_map);
+            </script>
+        
